@@ -16,8 +16,13 @@ var swiper = new Swiper('.suppliers__container', {
     slidesPerGroup: 3,
     loop: false,
     loopFillGroupWithBlank: true,
-    // navigation: {
-    //     nextEl: '.suppliers__slide-btn-next',
-    //     prevEl: '.suppliers__slide-btn-prev',
-    // },
 });
+
+
+$(document).ready(function () {
+
+});
+
+
+
+
