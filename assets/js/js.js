@@ -20,7 +20,21 @@ var swiper = new Swiper('.suppliers__container', {
 
 
 $(document).ready(function () {
+    $('.submenu-aside__l').not(':first').hide();
 
+    $('.menu-aside__l-i-link').click(function () {
+
+       var findArticle = $(this).next('.submenu-aside__l');
+       var findWrapper = $(this).closest('.menu-aside__l');
+
+       if(findArticle.is(':visible')) {
+           findArticle.slideUp(600);
+       }
+       else {
+           findWrapper.find('.submenu-aside__l').slideUp();
+           findArticle.slideDown();
+       }
+    });
 });
 
 
