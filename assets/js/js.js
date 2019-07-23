@@ -37,6 +37,38 @@ $(document).ready(function () {
     });
 });
 
+var links = document.querySelectorAll('.tabs-links h1');
+var content = document.querySelectorAll('.tabs-content .main-wrap');
+for (var i = 0; i < links.length; i++) {
+    (function (i) {
+        var link = links[i];
+        link.onclick = function () {
+            for(var j = 0; j < content.length; j++){
+                var opacity = window.getComputedStyle(content[j]).opacity;
+                if (opacity == "1") {
+                    content[j].style.opacity = "0"
+                }
+            }
+            content[i].style.opacity ="1";
+        }
+    }) (i);
+}
 
 
+var linksGallery = document.querySelectorAll('.menu-aside__l li');
+var contentGallery = document.querySelectorAll('.production-gallery--tabs .production-gallery__wrap');
 
+for (var i = 0; i < linksGallery.length; i++) {
+    (function (i) {
+        var linkGallery = linksGallery[i];
+        linkGallery.onclick = function () {
+            for (var j = 0; j < contentGallery.length; j++){
+                var opacityGallery = window.getComputedStyle(contentGallery[j]).opacity;
+                if (opacityGallery == "1") {
+                    contentGallery[j].style.opacity = "0";
+                }
+            }
+            contentGallery[i].style.opacity = "1";
+        }
+    })(i);
+}
