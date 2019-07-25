@@ -138,7 +138,7 @@ p {
 .menu__item-link:hover {
     background-color: #80a112;
 }
-/*bg*/
+    /*bg*/
 .bg {
     background: url("../img/bg.jpg");
     min-height: 500px;
@@ -294,7 +294,9 @@ p {
 }
 .main__items-wrap {
     display: flex;
+    width: 780px;
     flex-wrap: wrap;
+   justify-content: center;
 }
 .menu-aside__l-i-link {
     color: #fff;
@@ -331,20 +333,23 @@ p {
     color: #fff;
 }
 .main__item {
-    display: flex;
-    background-color: #4b3647;
-    text-align: center;
-    width: 197px;
-    height: 100px;
-    box-shadow: 0 3px 5px #a7a9aa;
-    margin-right: 30px;
-    margin-bottom: 40px;
-    padding: 10px;
-    text-decoration: none;
+
+    margin-right: 40px;
+    /*display: flex;*/
+    /*background-color: #4b3647;*/
+    /*text-align: center;*/
+    /*width: 197px;*/
+    /*height: 100px;*/
+    /*box-shadow: 0 3px 5px #a7a9aa;*/
+    /*margin-right: 30px;*/
+    /*margin-bottom: 40px;*/
+    /*padding: 10px;*/
+    /*text-decoration: none;*/
 }
 .main__item span {
     color: #fff;
     padding-top: 30px;
+    width: 100%;
 }
 .main__item-img {
     width: 100%;
@@ -352,6 +357,8 @@ p {
 .main__item-inner {
     display: flex;
     align-items: center;
+    width: 200px;
+    height: 200px;
 }
 .menu-aside__l-i-link {
     cursor: pointer;
@@ -406,4 +413,94 @@ p {
 }
 .production-gallery__wrap:nth-child(1) {
     opacity: 1;
+}
+
+/*services*/
+.services-wrap {
+    color: #fff;
+}
+.services-wrap p {
+    margin-bottom: 20px;
+}
+.services__block-right {
+    display: flex;
+    margin-bottom: 30px;
+}
+.services__block-right p {
+    margin-right: 30px;
+}
+.services__block-left p {
+    margin-left: 30px;
+}
+.services__block-right  span{
+
+}
+.services-fs {
+    font-size: 20px;
+    margin-bottom: 20px;
+    display: block;
+    color: #80a112;
+    font-weight: bold;
+}
+.services__block-left {
+    display: flex;
+}
+.services__block-left {
+    margin-bottom: 30px;
+}
+
+/*reviews*/
+.reviews-wrap {
+    color: #fff;
+}
+.reviews__img-wrap {
+    width: 100px;
+    height: 100px;
+    background: red;
+    border-radius: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.reviews__img-wrap img {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+}
+.reviews__inner p:nth-child(2) {
+    text-align: right;
+}
+.reviews__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.reviews__inner-el {
+    position: relative;
+    flex-basis: 28%;
+    padding: 20px;
+    line-height: 25px;
+}
+.reviews__inner-el--border {
+    border: 1px solid #4b3647;
+}
+.reviews__inner-el--border:before, .reviews__inner-el--border:after  {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 28px;
+    height: 18px;
+    background-size: cover;
+}
+.reviews__inner-el--border:before {
+    background-image: url(../img/coma.png);
+    top: -12px;
+}
+.reviews__inner-el--border:after {
+    background-image: url("../img/stars_empty.png");
+    bottom: -9px;
+    right: 20px;
+    width: 130px;
+    height: 20px;
 }

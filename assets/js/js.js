@@ -54,21 +54,3 @@ for (var i = 0; i < links.length; i++) {
     }) (i);
 }
 
-
-var linksGallery = document.querySelectorAll('.menu-aside__l li');
-var contentGallery = document.querySelectorAll('.production-gallery--tabs .production-gallery__wrap');
-
-for (var i = 0; i < linksGallery.length; i++) {
-    (function (i) {
-        var linkGallery = linksGallery[i];
-        linkGallery.onclick = function () {
-            for (var j = 0; j < contentGallery.length; j++){
-                var opacityGallery = window.getComputedStyle(contentGallery[j]).opacity;
-                if (opacityGallery == "1") {
-                    contentGallery[j].style.opacity = "0";
-                }
-            }
-            contentGallery[i].style.opacity = "1";
-        }
-    })(i);
-}
