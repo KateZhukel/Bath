@@ -287,7 +287,8 @@ p {
     background-color: #4b3647;
     width: 42%;
     margin-right: 120px;
-    min-height: 560px;
+    height: 560px;
+    max-width: 310px;
 }
 .section-wrap{
     display: flex;
@@ -448,7 +449,9 @@ p {
 .services__block-left {
     margin-bottom: 30px;
 }
-
+.services__img-wrap img{
+    width: 260px;
+}
 /*reviews*/
 .reviews-wrap {
     color: #fff;
@@ -478,7 +481,7 @@ p {
 }
 .reviews__inner-el {
     position: relative;
-    flex-basis: 28%;
+    flex-basis: 43%;
     padding: 20px;
     line-height: 25px;
 }
@@ -496,6 +499,7 @@ p {
 .reviews__inner-el--border:before {
     background-image: url(../img/coma.png);
     top: -12px;
+    display: none;
 }
 .reviews__inner-el--border:after {
     background-image: url("../img/stars_empty.png");
@@ -503,4 +507,81 @@ p {
     right: 20px;
     width: 130px;
     height: 20px;
+}
+/*contacts*/
+.contacts {
+    color: #fff;
+    line-height: 25px;
+    font-size: 14px;
+}
+.contacts p {
+    margin-bottom: 20px;
+}
+.contacts p:last-child {
+    margin-bottom: 60px;
+}
+.contacts__second a {
+    text-decoration: none;
+    color: #fff;
+    transition: .2s;
+}
+.contacts__second a:hover {
+    color: #e1aa28;
+}
+.contacts__second-tel--velcom, .contacts__second-tel--mts {
+    position: relative;
+}
+.contacts__second-tel--velcom a {
+    padding-left: 35px;
+}
+.contacts__second-tel--velcom:before {
+    background-image: url("../img/velcom.png");
+    position: absolute;
+    content: '';
+    display: block;
+    width: 25px;
+    height: 19px;
+    background-size: contain;
+}
+.contacts__second-tel--mts:before {
+    background-image: url("../img/mts.png");
+    position: absolute;
+    content: '';
+    display: block;
+    width: 25px;
+    height: 19px;
+    background-size: cover;
+}
+.contacts__second-tel--mts  a{
+    padding-left: 36px;
+}
+.contacts__second-email:before {
+    background-image: url("../img/email-icon.png");
+    position: absolute;
+    content: '';
+    display: block;
+    width: 25px;
+    height: 20px;
+    background-size: cover;
+}
+.contacts__second-email a {
+    padding-left: 36px;
+}
+.contacts__second-skype:before {
+    background-image: url("../img/skype-icon.png");
+    position: absolute;
+    content: '';
+    display: block;
+    width: 25px;
+    height: 24px;
+    background-size: cover;
+}
+.contacts__second-skype p {
+    padding-left: 36px;
+}
+.contacts__second div {
+    margin-bottom: 16px;
+}
+.contacts__map iframe {
+    width: 100%;
 }
